@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "c8a19330-e3c2-4dc0-919b-0a29d95f23ed",
+		"name": "testCase",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userName\": \"unburakOznur\",\n    \"email\": \"burakoznur93@gmail.com\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3500/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"burakoznur93@gmail.com\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3500/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ0ZXN0Q2FzZSIsInN1YiI6IjYxNmJmMjQzODFkNWFhYTg5ZjJjNDkwZCIsImF1ZCI6InRlc3RDYXNlIiwiZXhwIjoxNjM0NTU0NjY3LCJuYmYiOjE2MzQ0NjQ2NjcsImlhdCI6MTYzNDQ2NDY2N30.dOURQ5GJ3sM0xtgQUdH5r7DjxPpNQLgUaplwhBWnaTbwDumZhzUAfVbZ3_TmvHyZCYjv0_wMfr7DyGeRUV-JVIjoK19EqO7XDGkgf29_xumwajI-hJOikCWcbrWY6uhhPsgBa9SrCbzuHwbrU6St2PcIIm_RkljlmODznhBgjxc\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3500/my-profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"my-profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"accessToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ0ZXN0Q2FzZSIsInN1YiI6IjYxNmJmMjQzODFkNWFhYTg5ZjJjNDkwZCIsImF1ZCI6InRlc3RDYXNlIiwiZXhwIjoxNjM0NTU0MzIzLCJuYmYiOjE2MzQ0NjQzMjMsImlhdCI6MTYzNDQ2NDMyM30.PkvLCgsyNDOwwyyUtmEsVT5am3rACJ9syss4ztZPWA3QAwIPPIt0BmpfFxDMgTCFupG7420WQv9eoLN6wHizqkwUYrS08S9XJdI0TbuoQjkBHAkj1yn1K00tLmAPXZM2uLk5S2qR8Ww2Kn8BCNP6ttJZC1rdZRLLsBOHLs61KEQ\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3500/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "code",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"word\": \"Judy Stone\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3500/code",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3500",
+					"path": [
+						"code"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
