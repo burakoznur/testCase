@@ -6,7 +6,7 @@
 6. Now you can run the application with command "node app"
 
 note1: The "request And Responses.pdf" file containing the api requests and results is in the "files" directory.
-note2: The "testCase.postman_collection.json" file that contains the usage of the APIs is in the " directory.
+<br/>note2: The "testCase.postman_collection.json" file that contains the usage of the APIs is in the " directory.
 
 Example Api Curls
 
